@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+</head>
+<body>
+    <h1>Report Form</h1>
+    <Form id="report-form">
+        <label for="name">Name:</label>
+        <input type="text" id="Name" name="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+        <h2>Leave a Comment</h2>
+        <textarea id="commentBox" rows="2" cols="50" placeholder="Write your comment here...">
+        </textarea>
+
+        <button type="submit">Submit</button>
+
+    </Form>
+
+    <script type="text/javascript">
+        document.getElementById('report-form').addEventListener('submit', function (e)) {
+            e.preventDefult(); // Prevent default form submission
+            // Get form data
+            const name = document.getElementById('name').value; 
+            const age = document.getElementById('age').value; 
+            const commentBox = document.getElementById('commentBox');
+            const submitButton = document.getElementById('submitComment');
+            const commentsection = document.getElementById('commentSection');
+
+            //add an event Listener for the submit button
+            submitButton.addEventListener('click', () => {
+                //get the value of the textarea
+                const comment = commentBox.value.trim();
+
+                //check if the comment is not empty
+                if (comment) {
+                    const newComment = document.createElement('p');
+                    newComment.textContent = comment;
+
+                    commentSection.appendChild(newComment);
+
+                    //clear the text area
+                    commentBox.value = '';
+                } else{
+                    alert('Please write a comment before submitting!');
+                }
+            });
+            
+            // save data to localStorage
+            const reportData = { name, age, comments };
+            localStorage.setItem('reportData', JSON.stringify(reportData));   
+
+            // Redirect to the report page
+            window.location.href = 'report.html';
+        });
+    </script>
+</body>
+</html>

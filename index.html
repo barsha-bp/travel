@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVENTURE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="#"></a>Tours</li>
+            <li><a href="#"></a>Explore</li>
+            <li><a href="#"></a>About</li>
+            <li class="ctn"><a href="#"></a>Contact</li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore the Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- == Events == -->  
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./images/langtang.jpg" alt="">
+                <h4>langtang trek camp</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui molestias, recusandae cupiditate deserunt natus voluptatem! Magni, similique. Est officiis molestiae nam pariatur veniam sunt in modi? Voluptatum, dolor numquam?</p>
+                <a href="#" class="ctn" >Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./images/ghandruk.jpg" alt="">
+                <h4>Walking Holidays</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui molestias, recusandae cupiditate deserunt natus voluptatem! Magni, similique. Est officiis molestiae nam pariatur veniam sunt in modi? Voluptatum, dolor numquam?</p>
+                <a href="#" class="ctn" >Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD</h1>
+            <div class="line"></div>
+            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ex incidunt, a facilis fugit quod commodi explicabo, perferendis eaque praesentium maiores, corporis sint veritatis ducimus voluptas veniam earum quam dolorum!</P>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+    <section class="tours">
+        <div class="row">
+            <div class="col">
+                <h1>UPCOMING TOURS & DESTINATION</h1>
+                <div class="line"></div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi sunt, cumque, facere, vel reiciendis labore sapiente laboriosam assumenda debitis fugiat in adipisci exercitationem perspiciatis deserunt quae corrupti officia mollitia ratione?</p>
+                 <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                   <div class="image"><img src="./images/hike.jpg" alt=""></div>
+                   <div class="image"><img src="./images/river.jpg" alt=""></div>
+                    <div class="image"><img src="./images/myself.jpg" alt=""></div>
+                    <div class="image"> <img src="./images/TosoRolpaLake.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>123 Fifth Avenue, BP 10160, Udayapur,Nepal|Phone: 041-267642 | Email: contact@example.com </p>
+        <p>Copyright 2020 Outdoor Adventure</p>
+    </section>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>

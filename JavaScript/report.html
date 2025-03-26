@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Page</title>
+</head>
+<body>
+    <h1>Submitted Report</h1>
+    <div id="reportDisplay"></div>
+
+    <script type="text/javascript">
+        // Retrive the comment from LocalStorage 
+        const reportData = localStorage.getItem('submittedReport');
+
+        if (reportData) {
+            // display the report
+           document.getElementById('reportDisplay').textContent = comment;
+        }else{
+            document.getElementById('reportDisplay').textContent = 'No report submitted.';
+        }
+    </script>
+     
+</body>
+</html>
